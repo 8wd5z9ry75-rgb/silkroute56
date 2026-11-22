@@ -56,4 +56,4 @@ const T=[
 ["Japan","Tokyo","Hotel Metropolitan Marunouchi","Meiji Shrine & Harajuku","Shibuya & Ginza","Skyline viewpoint","Local transport","Full day",280],
 ["China","Tokyo → Shanghai","Bund-area 4/5-star","Fly Tokyo → Shanghai","Bund / French Concession","Final-night dinner","Flight + private transfer","~3h flight",390],
 ["China","Shanghai → London","—","Yu Garden / final stroll if flight allows","Private transfer to airport","Fly Shanghai → London","International flight + transfer","~12–15h direct/total",710]
-].map((x,i)=>({id:"SR56-D"+String(i+1).padStart(2,"0"),day:i+1,date:new Date(2028,4,15+i).toISOString().slice(0,10),country:x[0],route:x[1],hotel:x[2],morning:x[3],afternoon:x[4],evening:x[5],transport:x[6],journeyTime:x[7],planned:x[8],status:"Estimated"}));
+].map((x,i)=>({id:"SR56-D"+String(i+1).padStart(2,"0"),day:i+1,date:new Date(Date.UTC(2028,4,15+i)).toISOString().slice(0,10),country:x[0],route:x[1],hotel:x[2],morning:x[3],afternoon:x[4],evening:x[5],transport:x[6],journeyTime:x[7],planned:x[8],status:"Estimated"}));
